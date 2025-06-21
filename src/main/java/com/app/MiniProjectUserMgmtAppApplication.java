@@ -1,13 +1,13 @@
-package com.app;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
-public class MiniProjectUserMgmtAppApplication {
+public class MiniProjectUserMgmtApp extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MiniProjectUserMgmtAppApplication.class, args);
-	}
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(MiniProjectUserMgmtApp.class);
+    }
 
+    public static void main(String[] args) {
+        SpringApplication.run(MiniProjectUserMgmtApp.class, args);
+    }
 }
+
