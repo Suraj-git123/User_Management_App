@@ -43,7 +43,7 @@ public class UserAccountController {
 		return "view-users";
 	}
 	@GetMapping("/edit")
-	public String editUserAcc(@RequestParam("id") Integer id ,Model model) {
+	public String editUserAccount(@RequestParam("id") Integer id ,Model model) {
 		UserAccount userAcc = service.getUserAcc(id);
 		model.addAttribute("user", userAcc);
 		return "index";
