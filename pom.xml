@@ -29,6 +29,8 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<sonar.host.url>http://13.127.166.38:9000/</sonar.host.url>
+		<sonar.login>sqa_21fd01f08bfebbdbdfb66381ced044c84551ea04</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
